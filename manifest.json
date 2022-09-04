@@ -1,0 +1,25 @@
+{
+    "name": "__MSG_appName__",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "__MSG_appDesc__",
+    "default_locale": "ja",
+    "homepage_url": "https://hidao80.github.io/chrome-extension-sample/",
+    "update_url": "https://github.com/hidao80/chrome-extension-sample/",
+    "icons": {
+        "256": "img/icon_256.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://hidao80.github.io/*"
+            ],
+            "js": [
+                "js/main.js"
+            ],
+            "css": [
+                "css/main.css"
+            ]
+        }
+    ]
+}
